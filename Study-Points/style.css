@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans HK', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/*brightness of the background for some reason*/
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(119, 128, 164, 0.7),rgba(83, 92, 124, 0.7)), url(img/alex.uden.for.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+/*hvor langt nede eller oppe teksten står på skærmen*/
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav img{
+    width: 150px;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+
+.nav-links ul li{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+
+/*doesnt work*/
+
+.nav-links ul li ::after{
+    content:'';
+    width: 0px;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100px;
+
+} 
+
+
+/*overskrift tekst position*/
+
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/*størrelsen på overskriften*/
+
+.text-box h1{
+    font-size: 62px;
+}
+
+/*brød-tekst*/
+
+.text-box p{
+    margin: 10px,50px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+/*kasse outline*/
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #1e229e;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 24px;
+    
+   
+}
+
+/*text kasse effekt og skrift*/
+
+.hero-btn:hover{
+    border: 1px solid #000000;
+    background: #1e229e;
+    transition: 1s;
+  
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+/*Mobile display*/
+
+
+
+@media (max-width: 700px){  
+.text-box h1{
+    font-size: 20px;
+}
+
+.nav-links ul li{
+    display: block;
+
+}
+.nav-links{
+    position: absolute;
+    background: #020e4b;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;z-index: 2;
+     z-index: 2;
+     transition: 1s;
+
+}
+
+nav .fa{
+    display: block;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+
+.burger{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+}
+
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/*tekst i kassen*/
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+/*gør at teksten burde stå ved siden af hinanden*/
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*kasse med tekst pt2*/
+
+.course-col{
+    flex-basis: 31%;
+    background: #f3f4ff;
+    border-radius: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin: 0 30px;
+    height: 40%;
+    
+}
+
+/*idk*/
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+/*box shadow effect*/
+
+.course-col:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2) ;
+}
+
+
+/*mobile display næste scroll*/
+
+
+@media screen and (max-width700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+.lol{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+    padding: 40px;
+}
+
+
+
+
+.gucci{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #1e229e;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 24px;
+    
+   
+}
+
+
+.gucci:hover{
+    border: 1px solid #000000;
+    background: #1e229e;
+    transition: 1s;
+  
+}
+
+
+
+
+.course{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(119, 128, 164, 0.7)), url(img/white.backround.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+
+.lol{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(119, 128, 164, 0.7)), url(img/white.backround.jpg);
+}
+
